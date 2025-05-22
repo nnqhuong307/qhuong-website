@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trang cá nhân của Quỳnh Hương</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+  <style>
+    :root {
+      --main-color: #000000;
+      --alt-color: #ffffff;
+      --accent-color: #0c3d83;
+      --text-color: #ffffff;
+      --text-alt: #000000;
+      --card-bg: #1a1a1a;
+      --shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    * {
+      transition: background-color 0.5s, color 0.5s;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--main-color);
+      color: var(--text-color);
+      overflow-x: hidden;
+    }
+
+    header {
+      width: 100%;
+      height: 100vh;
+      background: url('bia.jpg') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 3rem;
+      color: var(--text-color);
+      box-shadow: var(--shadow);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      animation: glow 2s ease-in-out infinite alternate;
+      font-family: 'Pacifico', cursive;
+    }
+
+    header p {
+      max-width: 600px;
+      font-size: 1.2rem;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #0c3d83, 0 0 20px #0c3d83;
+      }
+      to {
+        text-shadow: 0 0 20px #10b981, 0 0 40px #10b981;
+      }
+    }
+
+    nav {
+      position: fixed;
+      top: 50%;
+      right: 1rem;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      z-index: 100;
+    }
+
+    nav a {
+      background: linear-gradient(135deg, var(--accent-color), var(--alt-color));
+      color: var(--text-alt);
+      padding: 0.75rem;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow);
+      transition: transform 0.3s;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      transform: scale(1.1);
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 960px;
+      margin: auto;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 1rem;
+      box-shadow: var(--shadow);
+    }
+
+    .social-bar {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .social-bar a {
+      background-color: var(--alt-color);
+      border-radius: 50%;
+      padding: 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow);
+      transition: transform 0.3s;
+    }
+
+    .social-bar a:hover {
+      transform: scale(1.1);
+    }
+
+    .social-bar img {
+      width: 24px;
+      height: 24px;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      border: none;
+      resize: none;
+      font-size: 1rem;
+    }
+
+    .btn {
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: var(--accent-color);
+      color: white;
+      border: none;
+      border-radius: 0.5rem;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: var(--shadow);
+      transition: transform 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <header id="home">
+    <h1>Xin chào, mình là</h1>
+    <h1>Nguyễn Ngọc Quỳnh Hương</h1>
+    <p>"Mỗi ngày là một hành trình mới, nơi mình học hỏi, trải nghiệm và tiến bộ. Chào mừng bạn đến với không gian nhỏ đầy cảm hứng của mình!"</p>
+  </header>
+
+
+  <nav>
+    <a href="#home" title="Trang chủ">🏠</a>
+    <a href="#about" title="About Me">🧍‍♀️</a>
+    <a href="#blog" title="Blog">📝</a>
+    <a href="#projects" title="Dự án">💼</a>
+    <a href="#contact" title="Liên hệ">📨</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p><strong>Họ tên:</strong> Nguyễn Ngọc Quỳnh Hương</p>
+      <p><strong>Trường:</strong> THPT Lê Quý Đôn, Bố Trạch, Quảng Bình – <a href="https://www.facebook.com/profile.php?id=100064559601985" target="_blank">Tham quan trang trường</a></p>
+    </div>
+    <div class="card">
+      <p><strong>Sở thích:</strong> Đọc sách, nghe nhạc, viết lách, bóng chuyền, lập trình web và bảo mật thông tin </p>
+      <p><strong>Tính cách:</strong> Sáng tạo, chăm chỉ, luôn học hỏi </p>
+      <p><strong>Môn học yêu thích:</strong> Tin học, Hóa học, Toán học </p>
+    </div>
+    <div class="card">
+      <p><strong>Ngôi trường từng học:</strong> THCS Tây Trạch </p>
+    </div>
+    <div class="card">
+      <p><strong>Định hướng tương lai:</strong> Theo đuổi lĩnh vực bảo toàn thông tin, an ninh mạng và sáng tạo nội dung </p>
+    </div>
+  </section>
+
+  <section id="blog">
+    <h2>Fanpage của mình</h2>
+    <div class="card">
+      <p>Trang Thoái Quyện Di là nơi mình thể hiện góc nhìn cá nhân thông qua những bức ảnh tinh tế và bài viết mang phong cách rất riêng.</p>
+      <p><a href="https://www.facebook.com/profile.php?id=100089700961532" target="_blank">Ghé thăm Fanpage</a></p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Dự án</h2>
+    <div class="card">
+      <p>🎨 Dự án môn Tiếng Anh về môi trường </p>
+      <a href="https://www.canva.com/design/DAGS-wsObwU/8gN7ta6Th70vdZvq3hrIGw/edit?utm_content=DAGS-wsObwU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank"><img src="https://img.icons8.com/ios-filled/50/canva.png" alt="Canva"></a>
+    </div>
+    <div class="card">
+      <p>🎬 Edit Video cho văn nghệ của trường </p>
+      <a href="https://youtu.be/Tr5yY5csIQY" target="_blank"><img src="https://img.icons8.com/ios-filled/50/youtube-play.png" alt="YouTube"></a>
+    <div class="card">
+      <p>🎬 Video lồng tiếng về di sản thiên nhiên </p>
+      <a href="https://youtu.be/WJTJ3IZdZE8" target="_blank"><img src="https://img.icons8.com/ios-filled/50/youtube-play.png" alt="YouTube"></a>
+    </div>
+    </section>
+  <section id="contact">
+    <h2>Liên hệ & Tin nhắn ẩn danh</h2>
+    <div class="card">
+      <p>Bạn muốn góp ý hay nhắn gửi điều gì? Hãy thoải mái chia sẻ qua hộp thư ẩn danh bên dưới. Mọi lời nhắn đều được trân trọng lắng nghe!</p>
+      <form action="https://formspree.io/f/meogpaqz" method="POST">
+        <textarea name="message" rows="5" placeholder="Lời nhắn của bạn" required></textarea>
+        <button class="btn" type="submit">Gửi</button>
+      </form>
+    </div>
+    <div class="card">
+      <p><strong>Email:</strong> ngocquynhhuongnguyen2@gmail.com</p>
+      <p><strong>Phone Number:</strong> 0898774033</p>
+      <p><strong>Location:</strong> Bố Trạch, Quảng Bình</p>
+    </div>
+    <div class="social-bar">
+      <a href="https://locket.cam/qh.tnd.kct" target="_blank"><img src="locket.jpg" alt="Locket"></a>
+      <a href="https://www.instagram.com/qh.rieux.dc?igsh=cWFodmRsaW0zNnZs" target="_blank"><img src="https://img.icons8.com/ios-filled/50/instagram-new.png" alt="Instagram"></a>
+      <a href="https://www.tiktok.com/@rieux.kct?_t=ZS-8wYf591VEo6&_r=1" target="_blank"><img src="https://img.icons8.com/ios-filled/50/tiktok.png" alt="TikTok"></a>
+      <a href="https://www.facebook.com/nguyen.ngoc.quynh.huong.472653" target="_blank"><img src="https://img.icons8.com/ios-filled/50/facebook-new.png" alt="Facebook"></a>
+      <a href="https://zalo.me/0898774033" target="_blank"><img src="zalo.jpg" alt="Zalo"></a>
+      <a href="https://www.youtube.com/@nguyenngocquynhhuong" target="_blank"><img src="https://img.icons8.com/ios-filled/50/youtube-play.png" alt="YouTube"></a>
+    </div>
+  </section>
+
+  <script>
+    const text = "\"Mỗi ngày là một hành trình mới, nơi em học hỏi, trải nghiệm và tiến bộ. Chào mừng bạn đến với không gian nhỏ đầy cảm hứng của em!\"";
+    let i = 0;
+    const speed = 50;
+    const typing = document.getElementById("typing");
+    const cursor = document.getElementById("cursor");
+
+    function typeWriter() {
+      if (i < text.length) {
+        typing.textContent += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      } else {
+        cursor.style.display = "none";
+      }
+    }
+
+    window.onload = typeWriter;
+  </script>
+</body>
+</html>
